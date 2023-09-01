@@ -32,11 +32,7 @@
     justify-content: center;
     align-items: center;
     text-align: left;
-    margin-left: 25%;
-    
-
-
-    
+    margin-left: 25%;  
 }
 
 .about-content h1{
@@ -91,7 +87,7 @@
 
 @media (min-width: 768px) {
     .about-content {
-      max-width: 70%; /* Limit width on larger screens */
+      width: 70%; /* Limit width on larger screens */
     }
   
     .order-md-1 {

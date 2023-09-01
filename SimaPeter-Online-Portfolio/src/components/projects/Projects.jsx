@@ -1,6 +1,8 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
-import projectImage from '../Img/Mzamomtsha-Primary.png';
+import { Container, Card, Row, Col } from 'react-bootstrap';
+import projectImage1 from '../Img/MzamomtshaPrimary.png';
+import projectImage2 from '../Img/BasicBankApplication.png';
+import projectImage3 from '../Img/FinancialCalculator.png';
 import './Projects.css';
 
 function Projects() {
@@ -8,16 +10,41 @@ function Projects() {
     <section className="projects" id="projects">
       <h2 className="Projectheading">Projects</h2>
       <Container className="project-content-container"> 
-      <div className="projects-box">
-        <img src={projectImage} alt=""/>
-      <div className="project-layer">
-          <h4 className="boxHeading">Mzamomtsha Primary School Website</h4>
-          <a href="https://melodic-nasturtium-8a6e3c.netlify.app/"><i id="link" className="bx bx-link-external link"></i></a>
-        </div>
-       </div>
-    </Container>
-  </section>
+        <Row>
+          <Col md={4}>
+            <Card className="Project-card">
+              <a href="https://melodic-nasturtium-8a6e3c.netlify.app/">
+                <Card.Img src={projectImage1} alt="Project 1" />
+                <div className="overlay">
+                  <div className="text">Mzamomtsha Primary School Website</div>
+                </div>
+              </a>
+            </Card>
+          </Col>
+          <Col md={4}>
+            <Card className="Project-card">
+              <a href="https://github.com/SimaPeter96/Basic-Bank-Application-Program">
+                <Card.Img src={projectImage2} alt="Project 2" />
+                <div className="overlay">
+                  <div className="text">Basic Bank Application Program</div>
+                </div>
+              </a>
+            </Card>
+          </Col>
+          <Col md={4}>
+            <Card className="Project-card">
+              <a href="https://github.com/SimaPeter96/Financial_Calculator">
+                <Card.Img src={projectImage3} alt="Project 3" />
+                <div className="overlay">
+                  <div className="text">Financial Calculator</div>
+                </div>
+              </a>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   );
 }
 
-export default Projects
+export default Projects;

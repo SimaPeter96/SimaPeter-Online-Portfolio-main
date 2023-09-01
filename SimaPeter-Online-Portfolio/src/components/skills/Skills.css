@@ -79,3 +79,27 @@
   .bounce-icon:hover {
     transform: scale(1.1); /* Apply a slight scale effect on hover */
   }
+
+  @media (max-width: 768px) {
+    .skills-content-container {
+        padding: 2rem 8%;
+    }
+
+    .skills-heading {
+        font-size: 24px;
+    }
+
+    .skills-content-container p {
+        font-size: 16px;
+    }
+
+    .img-gif {
+        display: none; /* Hide the image on smaller screens */
+    }
+
+    .icon {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+    }
+}

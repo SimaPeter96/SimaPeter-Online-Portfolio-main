@@ -19,82 +19,50 @@
     padding: 8% 8rem;
 }
 
-.project-content-container{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: enter;
-    gap: 5rem;
-    margin: 5rem 8rem;
-}
- .project-content-container {
-    position: relative;
-    border-radius: 2rem;
-    height: 35vh;
-    width: 50vh;
-    box-shadow:  0 01rem var( #4e4e4e00);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+
+.project-content-container {
+   margin-bottom: 200px;
  }
-
-    .projects-box .project-layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), #4e4e4e00);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: #ffff;
-    padding: 0 1rem;
-    transform: translateY(100%);
-    transition: .5s ease;
-    }
-
- .projects-box img{
-    width: 100%;
-    transition: .5s ease;
-    object-fit: cover; 
+ 
+ .Project-card {
+   border: 1px solid #7db9f1;
+   border-radius: 10px;
+   overflow: hidden;
+   position: relative;
+   box-shadow: 0 2px 4px rgba(28, 141, 247, 0.904);
  }
-
- .projects-box:hover img{
-    transform: scaale(1.1);
+ 
+ .Project-card .card-img-overlay {
+   background-color: rgba(79, 181, 248, 0.6);
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   opacity: 5;
+   transform: scale(0.9); 
+   transition: opacity 0.5s ease;
  }
-
- .projects-box.project-layer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: var(#4e4e4e00);
-    padding: 0 1rem;
-    transform: translateY(100%);
-    transition: .5s ease;
+ 
+ .Project-card:hover .card-img-overlay {
+   opacity: 50%;
  }
-
- .projects-box.project-layer.boxHeading{
-    position: relative;
-    top: -35px;
-    font-size: 30px;
+ 
+ .Project-card .text {
+   color: #042938;
+   font-weight: bold;
+   text-align: center;
+   margin-top: 10px;
  }
+ 
 
- .projects-box.project-layer #link{
-    position: relative;
-    top:-30px;
- }
-
-
- .projects-box:hover.project-layer{
-    transform:translateY(0);
+ /* Responsive styles for small screens */
+ @media (max-width: 768px) {
+   .Project-card {
+     margin-bottom: 20px;
+   }
  }
