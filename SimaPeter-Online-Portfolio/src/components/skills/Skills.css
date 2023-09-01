@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Carrois Gothic', sans-serif;
+    align-content: center;
+}
+
+
+
+.skills{
+    display: flex;
+    height: 100vh;
+    background-image: url('../Img/Skills.jpg');
+    background-size: cover;
+
+}
+
+.skills-content-container{
+    min-width: 100vh;
+    padding: 8rem 8%;
+}
+
+.skills-heading{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skills-content-container p{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-align: center;
+    font-weight: normal;
+    font-size: 22px;
+    
+}
+
+.skills-content-container h2{ 
+    font-size: medium;
+    font-weight:bold;
+    margin-top: 20px;
+}
+
+  .img-gif {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 50%;
+    position: absolute;
+    margin-left: 300px;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px); /* Adjust the bounce height as needed */
+    }
+  }
+
+  
+.icons-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+  
+  .icon {
+    width: 170px; /* Adjust the icon size as needed */
+    height: 170px;
+    margin: 1px; /* Add some horizontal spacing between icons */
+    transition: transform 0.3s ease-in-out;
+    animation: bounce 3s infinite;
+  }
+  
+  .bounce-icon:hover {
+    transform: scale(1.1); /* Apply a slight scale effect on hover */
+  }

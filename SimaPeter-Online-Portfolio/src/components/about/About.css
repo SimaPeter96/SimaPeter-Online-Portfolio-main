@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Carrois Gothic', sans-serif;
+}
+
+.about{
+    display: flex;
+    height: 100vh;
+    background-image: url('../Img/aboutBG.jpg');
+    background-size: cover; 
+   
+}
+
+.about-Img{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5%;
+  position: absolute;
+  right: 0;
+  margin-right: 80px;
+
+}
+.about-content{
+    border: 1px; 
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-left: 25%;
+    
+
+
+    
+}
+
+.about-content h1{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.about-content p{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 18px;
+    margin: 15px 0;
+    max-width: 550px;
+    line-height: 1.5;
+  
+}
+
+
+
+.bounce-button {
+  animation: bounce 2s infinite;
+}
+
+.btn-custom-about {
+  background-color: #356093;
+  border-color: #C6DCF0;
+  color: white;
+  width: '';
+  border-radius: 20px;
+  margin-right: 70px;
+  margin-top: 15%;
+  
+
+}
+
+.btn-custom-about:hover {
+  background-color: #356093;
+  border-color:  #C6DCF0;
+}
+
+@keyframes bounce-b {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (min-width: 768px) {
+    .about-content {
+      max-width: 70%; /* Limit width on larger screens */
+    }
+  
+    .order-md-1 {
+      order: 1; /* Change order of columns on larger screens */
+    }
+  
+    .order-md-2 {
+      order: 2; /* Change order of columns on larger screens */
+    }
+  }
+

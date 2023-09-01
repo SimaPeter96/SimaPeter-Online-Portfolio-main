@@ -1,0 +1,93 @@
+
+
+.home {
+    display: flex;
+    height: 100vh;
+    background-image: url('../Img/Home-bg.jpg');
+    background-size: cover;
+  }
+
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .home-content h1 {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 40px;
+    text-align: left;
+    margin-top: 200px;
+    padding-left: 40px;
+    color: #083A50;
+    
+  }
+
+.home-content h2{
+    font-family: 'Coda', cursive;
+    font-size: 45px;
+    padding-left: 170px;
+    color: #164466;
+
+}
+
+.home-content p span {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    color: #08468E;
+    font-weight: bold;
+}
+  
+  .home-content p {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 22px;
+    margin: 15px 0;
+    width: 905px;
+    text-align: left;
+    padding-left: 405px;
+    color: #042D3F;
+  }
+  
+  .btn-custom-home {
+    background-color: #356093;
+    border-color: #C6DCF0;
+    color: white;
+    width: '';
+    border-radius: 20px;
+    margin-left: 1px;
+    
+  
+
+  }
+  
+  .btn-custom-home:hover {
+    background-color: #356093;
+    border-color:  #C6DCF0;
+  }
+ 
+
+
+  .jpg {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5%;
+    position: absolute;
+    right: 0;
+    margin-right: 100px;
+  
+   
+  }
+  
+.home-content a {
+    color: white;
+    text-decoration: none;
+    background-color: #356093;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+  
+

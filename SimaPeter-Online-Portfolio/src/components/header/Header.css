@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.NavContainer{
+    position: fixed;
+    width: 100%;
+    z-index:100;
+    background-color: #AFCBEC;
+    transition: none;
+ 
+}
+
+.logo{
+    width: 68px;
+    height: 55px;
+    flex-shrink: 0;
+}
+
+.NavContainer .nav-link{
+    color: black;
+    transition: color 0.3s;
+}
+
+.NavContainer .nav-link:hover{
+    color: white;
+}
+
+.nav-link {
+    font-family: 'Carrois Gothic', sans-serif;
+    color: black;
+    font-weight: 48px;
+}
