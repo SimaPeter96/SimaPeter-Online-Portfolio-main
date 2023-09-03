@@ -19,7 +19,7 @@ function Home() {
                 I am a junior software developer based in Cape Town,
                 currently building websites using front-end and back-end.
               </p>
-              <Button variant='custom-home' type='submit'>About Me</Button>
+              <Button variant='custom-home' type='submit' href="#about" >About me</Button>
             </div>
           </Col>
           <Col md={6} className='jpg'>
