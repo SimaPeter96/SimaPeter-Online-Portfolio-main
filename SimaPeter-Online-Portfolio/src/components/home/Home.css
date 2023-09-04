@@ -51,15 +51,15 @@
     color: #042D3F;
   }
   
+
+
   .btn-custom-home {
     background-color: #356093;
     border-color: #C6DCF0;
     color: white;
     width: '';
-    border-radius: 20px;
+    border-radius: 50%;
     margin-left: 1px;
-    
-  
 
   }
   

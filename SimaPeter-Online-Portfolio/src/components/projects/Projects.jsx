@@ -9,6 +9,7 @@ function Projects() {
   return (
     <section className="projects" id="projects">
       <h2 className="Projectheading">Projects</h2>
+      <p>Here are some of the projects I've worked on and collaborated with. </p>
       <Container className="project-content-container"> 
         <Row>
           <Col md={4}>

@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import GithubImg from '../Img/GitHub.png';
 import linkedInImg from '../Img/LinkedIn.png';
 import Instagram from '../Img/Instagram.png';
-import Email from '../Img/Email.png';
+
 import './Contact.css';
 
 
@@ -24,7 +24,7 @@ function Contact() {
         <div className="social-media-links">
           <p><img src={GithubImg } alt=""  href=""/></p>
           <p><img src={Instagram} alt=""  href=""/></p>
-          <p><img src={Email} alt="" href=""/></p>
+          <p><img src={linkedInImg} alt="" href=""/></p>
        </div>
        <hr/>
         <div className="footer-below">

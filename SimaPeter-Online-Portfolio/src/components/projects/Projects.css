@@ -19,6 +19,13 @@
     padding: 8% 8rem;
 }
 
+.projects p{
+   font-family: 'Fira Sans Extra Condensed', sans-serif;
+   text-align: center;
+   font-weight: normal;
+   font-size: 22px;
+   margin-bottom: 10px;
+}
 
 .project-content-container {
    margin-bottom: 200px;
