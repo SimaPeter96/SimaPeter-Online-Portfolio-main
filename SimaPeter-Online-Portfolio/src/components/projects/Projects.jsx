@@ -14,32 +14,50 @@ function Projects() {
         <Row>
           <Col md={4}>
             <Card className="Project-card">
-              <a href="https://melodic-nasturtium-8a6e3c.netlify.app/">
-                <Card.Img src={projectImage1} alt="Project 1" />
-                <div className="overlay">
-                  <div className="text">Mzamomtsha Primary School Website</div>
-                </div>
-              </a>
+              <div className='card-inner'>
+                <div className="card-front">
+                  <a href="https://melodic-nasturtium-8a6e3c.netlify.app/">
+                   <Card.Img src={projectImage1} alt="Project 1" />
+                    <div className="overlay">
+                    <div className="text">Mzamomtsha Primary School Website</div>
+                       <div className="card-back">
+                     </div>
+                   </div>
+                 </a>
+               </div>
+              </div>
             </Card>
           </Col>
           <Col md={4}>
             <Card className="Project-card">
-              <a href="https://github.com/SimaPeter96/Basic-Bank-Application-Program">
-                <Card.Img src={projectImage2} alt="Project 2" />
-                <div className="overlay">
-                  <div className="text">Basic Bank Application Program</div>
-                </div>
-              </a>
+                <div className='card-inner'>
+                    <div className="card-front">
+                       <a href="https://github.com/SimaPeter96/Basic-Bank-Application-Program">
+                        <Card.Img src={projectImage2} alt="Project 2" />
+                         <div className="overlay">
+                        <div className="text">Basic Bank Application Program</div>
+                       <div className="card-back">
+                     </div>
+                   </div>
+                   </a>
+               </div>
+              </div>
             </Card>
           </Col>
           <Col md={4}>
             <Card className="Project-card">
+            <div className='card-inner'>
+              <div className="card-front">
               <a href="https://github.com/SimaPeter96/Financial_Calculator">
                 <Card.Img src={projectImage3} alt="Project 3" />
                 <div className="overlay">
                   <div className="text">Financial Calculator</div>
-                </div>
-              </a>
+                  <div className="card-back">
+                  </div>
+                 </div>
+                </a>
+               </div>
+              </div>
             </Card>
           </Col>
         </Row>
