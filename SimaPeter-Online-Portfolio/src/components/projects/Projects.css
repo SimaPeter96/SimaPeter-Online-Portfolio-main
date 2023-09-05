@@ -12,11 +12,11 @@
 }
 
 .Projectheading{
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    padding: 8% 8rem;
+   font-family: 'Share Tech Mono', monospace;
+   font-size: 36px;
+   font-weight: bold;
+   text-align: center;
+   padding-top: 100px;
 }
 
 .projects p{

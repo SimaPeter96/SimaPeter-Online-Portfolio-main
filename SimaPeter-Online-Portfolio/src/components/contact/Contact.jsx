@@ -1,10 +1,9 @@
-import React, {useState} from 'react';
+
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import GithubImg from '../Img/GitHub.png';
 import linkedInImg from '../Img/LinkedIn.png';
 import Instagram from '../Img/Instagram.png';
-
 import './Contact.css';
 
 
@@ -25,8 +24,9 @@ function Contact() {
           <p><img src={GithubImg } alt=""  href=""/></p>
           <p><img src={Instagram} alt=""  href=""/></p>
           <p><img src={linkedInImg} alt="" href=""/></p>
+          <p><img src={Email} alt="" href=""/></p>
        </div>
-       <hr/>
+       <hr/>zz
         <div className="footer-below">
         <div className="footer-copyright">
             <p> &copy;{new Date().getFullYear()} SimaPeter. All rights reserved</p>
