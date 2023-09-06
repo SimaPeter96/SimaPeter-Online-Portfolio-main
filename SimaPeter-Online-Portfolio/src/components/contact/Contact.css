@@ -38,7 +38,13 @@
     padding-left: 15%;
     
   }
-
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
   
   .contactForm .form-control {
     width: 200%; /* Increase the width of the text fields */
