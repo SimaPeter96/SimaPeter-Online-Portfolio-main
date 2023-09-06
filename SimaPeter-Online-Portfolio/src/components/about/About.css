@@ -33,6 +33,7 @@
     align-items: center;
     text-align: left;
     margin-left: 25%;  
+    padding-right: 20%;
 }
 
 .about-content h1{
@@ -47,6 +48,7 @@
     margin: 15px 0;
     max-width: 550px;
     line-height: 1.5;
+    
   
 }
 
@@ -73,29 +75,4 @@
   border-color:  #C6DCF0;
 }
 
-@keyframes bounce-b {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-20px);
-  }
-  60% {
-    transform: translateY(-10px);
-  }
-}
-
-@media (min-width: 768px) {
-    .about-content {
-      width: 70%; /* Limit width on larger screens */
-    }
-  
-    .order-md-1 {
-      order: 1; /* Change order of columns on larger screens */
-    }
-  
-    .order-md-2 {
-      order: 2; /* Change order of columns on larger screens */
-    }
-  }
 

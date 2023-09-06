@@ -7,7 +7,6 @@ import './Header.css';
 
 
 function Header() {
-  
   return (
     <Navbar expand="lg" className="NavContainer">
     <Container>

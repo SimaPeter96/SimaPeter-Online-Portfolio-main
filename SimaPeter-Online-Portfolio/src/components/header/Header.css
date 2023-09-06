@@ -49,15 +49,3 @@
     transition: none;
 }
 
-@media (max-width: 390px) and (max-height: 844px) {
-    /* Add specific styles for this screen size */
-    .logo {
-        width: 50px; /* Adjust logo size */
-        height: 40px;
-    }
-
-    .nav-link {
-        font-size: 24px; /* Adjust font size */
-        font-weight: 400; /* Adjust font weight */
-    }
-}
