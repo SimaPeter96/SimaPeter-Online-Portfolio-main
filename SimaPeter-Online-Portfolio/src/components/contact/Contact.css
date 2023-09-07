@@ -52,19 +52,24 @@
     border-radius: 20px;
     background-color: #84A5C2;
     padding-right: 200px;
-
- 
   }
 
-  
+  /* Add styles for error messages */
+.error{
+  color: red; /* Set the text color to red */
+  font-size: 0.875rem; /* Adjust the font size as needed */
+  margin-top: 4px; /* Add a little margin to separate the message from the input field */
+ 
+}
+
+/* You can customize these styles further based on your design preferences */
   .Send-Button{
     background-color: #143558;
     color: #fff;
-    width: 8%;
+    width: 20%;
     border-radius: 20px;
-    margin-right: 9px;
+    margin-left: 160px;
     margin-bottom: 10px;
-    
     
   }
   

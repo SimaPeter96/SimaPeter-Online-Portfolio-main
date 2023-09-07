@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import GithubImg from '../Img/GitHub.png';
-import linkedInImg from '../Img/LinkedIn.png';
-import Instagram from '../Img/Instagram.png';
+import LinkedInImg from '../Img/LinkedIn.png';
+import InstagramImg from '../Img/Instagram.png';
 import './Contact.css';
 
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
-    Surname: '',
-    Cellphone: '',
-    Email: '',
+    surname: '', // Changed to lowercase 'surname'
+    cellphone: '',
+    email: '',
     description: '',
   });
 
@@ -21,6 +21,11 @@ function Contact() {
       ...formData,
       [name]: value,
     });
+    // Clear validation error when input changes
+    setFormErrors({
+      ...formErrors,
+      [name]: '',
+    });
   };
 
   const validateForm = () => {
@@ -30,11 +35,28 @@ function Contact() {
       errors.name = 'Name is required';
     }
 
-    if (!formData.Email.trim()) {
-      errors.Email = 'Email is required';
-    } else if (!/^\S+@\S+\.\S+$/.test(formData.Email)) {
-      errors.Email = 'Invalid email format';
+    if (!formData.surname.trim()) {
+      errors.surname = 'Surname is required';
     }
+
+    if (!formData.email.trim()) {
+      errors.email = 'Email is required';
+    } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
+      errors.email = 'Invalid email format';
+    }
+
+    if (!formData.cellphone.trim()) {
+      errors.cellphone = 'Cellphone number is required';
+    } else if (!/^\d{10}$/.test(formData.cellphone)) {
+      errors.cellphone = 'Invalid cellphone number';
+    }
+
+    // Set errors for empty fields
+    Object.keys(formData).forEach((fieldName) => {
+      if (!formData[fieldName].trim() && !errors[fieldName]) {
+        errors[fieldName] = `${fieldName} is required`;
+      }
+    });
 
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
@@ -45,12 +67,21 @@ function Contact() {
     if (validateForm()) {
       // Form is valid, you can send the data here
       console.log(formData);
+
+      // Clear the form fields after submission
+      setFormData({
+        name: '',
+        surname: '',
+        cellphone: '',
+        email: '',
+        description: '',
+      });
     }
   };
 
   return (
     <section className="contact" id="contact">
-      <h1 className="ContactHeading">You have any projects?</h1>
+      <h1 className="ContactHeading">Do you have any projects?</h1>
       <span className="contactSubtitle">Let's chat</span>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
@@ -60,7 +91,6 @@ function Contact() {
             placeholder="Name"
             name="name"
             className="form-control"
-            id="name"
             value={formData.name}
             onChange={handleChange}
             required
@@ -72,45 +102,49 @@ function Contact() {
           <input
             type="text"
             placeholder="Surname"
-            name="Surname"
+            name="surname"
             className="form-control"
-            id="surname"
-            value={formData.Surname}
+            value={formData.surname}
             onChange={handleChange}
+            required
           />
+          {formErrors.surname && (
+            <div className="error">{formErrors.surname}</div>
+          )}
         </div>
         <div className="mb-3">
           <label className="form-label-cellphone"></label>
           <input
             type="text"
             placeholder="Cellphone Number"
-            name="Cellphone"
+            name="cellphone"
             className="form-control"
-            id="cellphone"
-            value={formData.Cellphone}
+            value={formData.cellphone}
             onChange={handleChange}
+            required
           />
+          {formErrors.cellphone && (
+            <div className="error">{formErrors.cellphone}</div>
+          )}
         </div>
         <div className="mb-3">
           <label className="form-label-email"></label>
           <input
             type="text"
             placeholder="Email"
-            name="Email"
+            name="email"
             className="form-control"
-            id="email"
-            value={formData.Email}
+            value={formData.email}
             onChange={handleChange}
             required
           />
-          {formErrors.Email && <div className="error">{formErrors.Email}</div>}
+          {formErrors.email && <div className="error">{formErrors.email}</div>}
         </div>
         <div className="mb-3">
           <label className="form-label-description"></label>
           <textarea
             placeholder="Description"
             className="form-control"
-            id="description"
             name="description"
             value={formData.description}
             onChange={handleChange}
@@ -122,9 +156,15 @@ function Contact() {
         </button>
       </form>
       <div className="social-media-links">
-        <a href="https://github.com/SimaPeter96"><img src={GithubImg} alt="GitHub" /></a>
-        <a href="https://www.linkedin.com/in/simamnkele-peter-b84a2118b/"><img src={linkedInImg} alt="LinkedIn" /></a>
-        <a href="#"><img src={Instagram} alt="Instagram" /></a>
+        <a href="https://github.com/SimaPeter96">
+          <img src={GithubImg} alt="GitHub Logo" />
+        </a>
+        <a href="https://www.linkedin.com/in/simamnkele-peter-b84a2118b/">
+          <img src={LinkedInImg} alt="LinkedIn Logo" />
+        </a>
+        <a href="#">
+          <img src={InstagramImg} alt="Instagram Logo" />
+        </a>
       </div>
       <hr />
       <div className="footer-below">
