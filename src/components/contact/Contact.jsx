@@ -1,8 +1,9 @@
 import React, { useState, useRef } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha'; // Import reCAPTCHA
 import GithubImg from '../Img/GitHub.png';
 import LinkedInImg from '../Img/LinkedIn.png';
 import InstagramImg from '../Img/Instagram.png';
-import emailjs from 'emailjs-com'; // Updated import statement
+import emailjs from 'emailjs-com';
 import './Contact.css';
 
 function Contact() {
@@ -15,6 +16,7 @@ function Contact() {
   });
 
   const [formErrors, setFormErrors] = useState({});
+  const [recaptchaValue, setRecaptchaValue] = useState(null); // Store reCAPTCHA value
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -59,6 +61,11 @@ function Contact() {
       }
     });
 
+    // Validate reCAPTCHA
+    if (!recaptchaValue) {
+      errors.recaptcha = 'Please complete the reCAPTCHA';
+    }
+
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
   };
@@ -98,13 +105,17 @@ function Contact() {
     }
   };
 
+  // Handle reCAPTCHA onChange event
+  const handleRecaptchaChange = (value) => {
+    setRecaptchaValue(value);
+  };
+
   return (
     <section className="contact" id="contact">
       <h1 className="ContactHeading">Do you have any projects?</h1>
       <span className="contactSubtitle">Let's chat</span>
       <form ref={form} onSubmit={handleSubmit}>
-      <div className="mb-3">
-          <label className="form-label-name"></label>
+        <div className="mb-3">
           <input
             type="text"
             placeholder="Name"
@@ -117,7 +128,6 @@ function Contact() {
           {formErrors.name && <div className="error">{formErrors.name}</div>}
         </div>
         <div className="mb-3">
-          <label className="form-label-surname"></label>
           <input
             type="text"
             placeholder="Surname"
@@ -132,7 +142,6 @@ function Contact() {
           )}
         </div>
         <div className="mb-3">
-          <label className="form-label-cellphone"></label>
           <input
             type="text"
             placeholder="Cellphone Number"
@@ -147,7 +156,6 @@ function Contact() {
           )}
         </div>
         <div className="mb-3">
-          <label className="form-label-email"></label>
           <input
             type="text"
             placeholder="Email"
@@ -160,7 +168,6 @@ function Contact() {
           {formErrors.email && <div className="error">{formErrors.email}</div>}
         </div>
         <div className="mb-3">
-          <label className="form-label-description"></label>
           <textarea
             placeholder="Description"
             className="form-control"
@@ -168,6 +175,16 @@ function Contact() {
             value={formData.description}
             onChange={handleChange}
           ></textarea>
+        </div>
+        <div className="mb-3">
+          
+          <ReCAPTCHA
+            sitekey="6LeCbxgoAAAAAEhtGOdg2YVclLZhIsFbMHskN4gP" // Replace with the correct reCAPTCHA key
+            onChange={handleRecaptchaChange}
+          />
+          {formErrors.recaptcha && (
+            <div className="error">{formErrors.recaptcha}</div>
+          )}
         </div>
         <br></br>
         <button type="submit" className="Send-Button">
