@@ -179,7 +179,7 @@ function Contact() {
         <div className="mb-3">
           
           <ReCAPTCHA
-            sitekey="6LeCbxgoAAAAAEhtGOdg2YVclLZhIsFbMHskN4gP" // Replace with the correct reCAPTCHA key
+            sitekey="6LfphRgoAAAAANe2zy84XxvjG2p9Zz9K2All9hQ_" // Replace with the correct reCAPTCHA key
             onChange={handleRecaptchaChange}
           />
           {formErrors.recaptcha && (
