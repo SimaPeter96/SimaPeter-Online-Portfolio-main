@@ -41,52 +41,14 @@
   position: relative;
   box-shadow: 0 2px 4px rgba(28, 141, 247, 0.904);
   width: 250px; /* Set the width of the card */
-  height: 300px; /* Set the height of the card */
+  height: 250px; /* Set the height of the card */
   perspective: 1000px; /* Add perspective for the flip animation */
   cursor: pointer; /* Add cursor pointer on hover */
-  transition: transform 0.5s; /* Add transition for smooth flip animation */
+  
 }
 
-.Project-card:hover .card-content {
-  transform: rotateY(180deg); /* Flip the content on hover */
-}
 
-.Project-card .card-inner {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
-}
 
-.Project-card:hover .card-inner {
-  transform: rotateY(180deg); /* Flip the card on hover */
-}
-
-.Project-card .card-front,
-.Project-card .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.Project-card .card-front {
-  background-color: #fff; /* Front card background color */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transform: rotateY(0deg);
-}
-
-.Project-card .card-back {
-  background-color: rgba(79, 181, 248, 0.6); /* Back card background color */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transform: rotateY(180deg);
-}
 
 .Project-card .text {
   color: #042938;
