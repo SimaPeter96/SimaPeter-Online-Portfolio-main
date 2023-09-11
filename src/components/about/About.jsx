@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Image from '../Img/AboutImg.png';
+import CV from '../Img/SimamnkelePeterCV.pdf';
 import './About.css';
 
 
@@ -25,7 +26,7 @@ function About() {
                     to make projects a success. Fun facts about me are, I love listening to  music 
                     and dancing. And I enjoy going to the gym.
                   </p>
-                  <Button className='bounce-button' variant='custom-about' type='submit'>Hire Me</Button>
+                  <Button className='bounce-button' variant='custom-about' type='submit' href={CV} download='' target='blank' >Hire Me</Button>
                 </div>
               </Col>
             </Row>
