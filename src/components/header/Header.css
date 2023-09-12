@@ -35,17 +35,4 @@
     font-weight: 48px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.NavContainer {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    background-color: #AFCBEC;
-    transition: none;
-}
 

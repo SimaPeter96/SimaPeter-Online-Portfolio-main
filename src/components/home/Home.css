@@ -5,6 +5,7 @@
     height: 100vh;
     background-image: url('../Img/Home-bg.jpg');
     background-size: cover;
+    padding: 50px;
   }
 
   .home-content {

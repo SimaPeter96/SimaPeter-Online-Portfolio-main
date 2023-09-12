@@ -10,7 +10,7 @@
     height: 100vh;
     background-image: url('../Img/aboutBG.jpg');
     background-size: cover; 
-   
+   width: 100%;
 }
 
 .about-Img{
