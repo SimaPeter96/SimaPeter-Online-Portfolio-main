@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha'; // Import reCAPTCHA
 import GithubImg from '../Img/GitHub.png';
 import LinkedInImg from '../Img/LinkedIn.png';
-import InstagramImg from '../Img/Instagram.png';
 import emailjs from 'emailjs-com';
 import './Contact.css';
 
@@ -197,9 +196,6 @@ function Contact() {
         </a>
         <a href="https://www.linkedin.com/in/simamnkele-peter-b84a2118b/">
           <img src={LinkedInImg} alt="LinkedIn Logo" />
-        </a>
-        <a href="#">
-          <img src={InstagramImg} alt="Instagram Logo" />
         </a>
       </div>
       <hr />
