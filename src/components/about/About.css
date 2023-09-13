@@ -6,7 +6,7 @@
 }
 
 .about{
-    display: flex;
+    /* display: flex; */
     height: 100vh;
     background-image: url('../Img/aboutBG.jpg');
     background-size: cover; 
@@ -14,8 +14,8 @@
 }
 
 .about-Img{
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex; */
+  /* justify-content: flex-end; */
   padding-bottom: 25%;
   position: absolute;
   right: 0;
@@ -24,8 +24,8 @@
 }
 .about-content{
     border: 1px; 
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     max-width: 1200px;
     width: 100%;
     margin-top: 30%;
@@ -74,5 +74,34 @@
   background-color: #356093;
   border-color:  #C6DCF0;
 }
+
+@media (max-width: 768px) {
+  /* .about-content h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+  } */
+
+  .about-Img{
+    /* display: flex; */
+    /* padding-bottom: 25%;
+    margin-right: 80px;
+   */
+   width: 100%;
+  }
+  .about-content p{
+    width: 100%;
+  }
+  
+  /* .Row-Col-About-Col{
+    display: flex;
+    flex-direction: column;
+  }  */
+
+
+
+}
+
+
 
 
