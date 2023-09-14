@@ -11,7 +11,7 @@ function Home() {
     <section className="home" id="home">
       <Container>
         <Row className="Row-Col home-col">
-          <Col md={6} className="align-self-center">
+          <Col classname="home-col" md={6} className="align-self-center">
             <div className="home-content">
               <h1>Hello, I'm</h1>
               <h2 className="home-content h2">Sima Peter</h2>
