@@ -16,9 +16,11 @@
   max-width: 100%;
   height: auto;
   border-radius: 50%;
+  
 }
 .about-Img{
   padding-left: 150px;
+  order: 2;
 }
 
 .about-content-text {
@@ -45,6 +47,8 @@
     font-weight: bold;
     padding-left: 30%;
     margin-bottom: 100px;
+    text-align: left;
+    order: 1;
   
 }
 
@@ -77,8 +81,40 @@
 
   
 @media  (max-width:768px) {
-  .about-Img {
-    margin-top: 0; /* Reset margin for smaller screens */
+  .about-Heading{
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    
+
   }
+
+  .about-Img {
+    max-width: 100%;
+    padding-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 96px;
+    margin-left: 0px;
+    width: 314px
+
+    
+  }
+  .p.paragraph{
+    padding-bottom: 4px;
+    padding-left: -13;
+    padding-right: 36px;
+    font-size: medium;
+    margin-bottom: 0px
+
+  }
+
+  .bounce-button btn btn-custom-about{
+    margin-left: 144px;
+
+  }
+  
   }
 
