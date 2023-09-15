@@ -20,7 +20,9 @@
 }
 .about-Img{
   padding-left: 150px;
-  order: 2;
+  padding-bottom: 80%;
+
+
 }
 
 .about-content-text {
@@ -45,17 +47,19 @@
     font-family: 'Share Tech Mono', monospace;
     font-size: 36px;
     font-weight: bold;
-    padding-left: 30%;
-    margin-bottom: 100px;
+    padding-left: 850px;
+    margin-top: 80px;
     text-align: left;
-    order: 1;
+    
   
 }
 
 .about-content-text p{
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-size: 20px; /* Adjust the font size as needed */
-    line-height: 1.5;
+    height: 186px;
+    margin-bottom: 297px;
+    padding-left: 200px;
     color:  #042D3F;
 }
 
@@ -70,7 +74,7 @@
   width: '';
   border-radius: 20px;
   margin-left: 100px;
-  margin-top: 15%;
+  margin-bottom: 100%;;
 
 }
 

@@ -41,9 +41,7 @@
   position: relative;
   box-shadow: 0 2px 4px rgba(28, 141, 247, 0.904);
   width: 250px; /* Set the width of the card */
-  height: 250px; /* Set the height of the card */
-  perspective: 1000px; /* Add perspective for the flip animation */
-  cursor: pointer; /* Add cursor pointer on hover */
+  
   
 }
 
@@ -57,11 +55,32 @@
   transition: transform 0.3s ease-in-out;
 
 }
+ 
+@media (max-width: 768px) {
+  .projects {
+    height: auto; /* Remove fixed height for smaller screens */
+    padding: 20px; /* Add some padding to the section */
+  }
 
+  .Projectheading {
+    font-size: 24px; /* Reduce font size for smaller screens */
+    padding-bottom: 50px; /* Adjust spacing for smaller screens */
+  }
 
- /* Responsive styles for small screens */
- @media (max-width: 768px) {
-   .Project-card {
-     margin-bottom: 20px;
-   }
- }
+  .projects p {
+    font-size: 18px; /* Reduce font size for smaller screens */
+    padding-bottom: 2%; /* Adjust spacing for smaller screens */
+  }
+
+  .project-content-container {
+    margin-bottom: 100px; /* Adjust margin for smaller screens */
+    padding-left: 20%; /* Adjust padding for smaller screens */
+    padding-bottom: 5%; /* Adjust padding for smaller screens */
+    
+  }
+
+  .Project-card {
+    width: 75%; /* Set the width of the card to 100% for smaller screens */
+  }
+
+}

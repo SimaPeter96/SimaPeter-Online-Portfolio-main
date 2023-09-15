@@ -6,7 +6,7 @@
   }
   
   .contact {
-    height: 100vh;
+    height: 110vh;
     background-image: url('../Img/Contact.jpg');
     background-size: cover;
     display: flex;
@@ -124,6 +124,11 @@
   
     .contactForm .form-control {
       margin-bottom: 8px;
+     
+    }
+
+    .Send-Button{
+      margin-right: 117px;
     }
   }
   
