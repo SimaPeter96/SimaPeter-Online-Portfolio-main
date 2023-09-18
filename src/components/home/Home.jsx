@@ -11,7 +11,7 @@ function Home() {
     <section className="home" id="home">
       <Container>
         <Row className="Row-Col home-col">
-          <Col classname="home-col" md={6} className="align-self-center">
+          <Col classname="home-col" md={6} className="align-self-center-home">
             <div className="home-content">
               <h1>Hello, I'm</h1>
               <h2 className="home-content h2">Sima Peter</h2>
@@ -19,7 +19,7 @@ function Home() {
                 I am a junior software developer based in Cape Town,
                 currently building websites using front-end and back-end.
               </p>
-              <Button variant='custom-home' type='submit' href="#about" >About me</Button>
+              <Button variant='custom-home' className='custom-home' type='submit' href="#about" >About me</Button>
             </div>
           </Col>
           <Col md={6} className='jpg'>
