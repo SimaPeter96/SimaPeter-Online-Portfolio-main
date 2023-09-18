@@ -143,7 +143,7 @@ function Contact() {
         <div className="mb-3">
           <input
             type="text"
-            placeholder="Cellphone Number"
+            placeholder="Phone"
             name="cellphone"
             className="form-control"
             value={formData.cellphone}
