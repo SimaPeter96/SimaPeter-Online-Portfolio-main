@@ -86,20 +86,21 @@
   
 @media  (max-width:768px) {
 .about .paragraph{
-  padding-left: 5px;
-  
+  padding-left: 10px;
+  padding-right: 50px;
+  margin-right: 100px;
+
+
 }
-  
-  
-  
   
   .about-Heading{
     font-size: 36px;
     text-align: center;
-    padding-bottom: 50px;
-    margin-bottom: 10px;
+    padding-bottom: 46px;
+    margin-bottom: 0px;
     padding-left: 0px;
-    height: 30px;
+    height: 46px;
+    width: 417px;
     
 
   }
@@ -109,9 +110,9 @@
     padding-bottom: 0px;
     padding-bottom: 0px;
     padding-top: 0px;
-    padding-left: 96px;
+    padding-left: 95px;
     margin-left: 0px;
-    width: 314px;
+    width: 350px;
   }
 
   .align-self-center-about{
@@ -122,10 +123,11 @@
   }
 
   .about-content-text{
-    width: 800px;
-    height: 50px;
+    width: 490px;
+    height: 40px;
     padding-right: 50px;
     margin-right: 200px;
+   
      
   }
 
@@ -134,6 +136,7 @@
     padding-bottom: 4px;
     padding-right: 10px;
     padding-left: 20px;
+    margin-bottom: 111px;
   
   }
 
