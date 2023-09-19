@@ -59,8 +59,8 @@
     border-color: #C6DCF0;
     color: white;
     width: 25%;
-    border-radius: 50%;
-    margin-left: 1px;
+    border-radius: 40%;
+    margin-left: 40px;
 
   }
   
@@ -118,7 +118,7 @@
 
   .custom-home {
     width: 30%;
-    font-size:1.5rem;
+    font-size: 8rem;
   }
 
 }

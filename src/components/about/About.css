@@ -64,7 +64,7 @@
 }
 
 .bounce-button {
-  animation: bounce 2s infinite;
+  animation: bounce 3s infinite;
 }
 
 .btn-custom-about {
@@ -81,6 +81,19 @@
 .btn-custom-about:hover {
   background-color: #356093;
   border-color:  #C6DCF0;
+}
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-40px);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
 }
 
   
@@ -123,10 +136,11 @@
   }
 
   .about-content-text{
-    width: 490px;
+    width: 550px;
     height: 40px;
-    padding-right: 50px;
+    padding-left: 80px;
     margin-right: 200px;
+    text-align: center ;
    
      
   }
@@ -141,11 +155,14 @@
   }
 
   .bounce-button {
-    margin-left: 144px;
+    margin-left: 100px;
+    margin-right: 250px;
 
   }
 
-  
+
+
+
 
 }
 
