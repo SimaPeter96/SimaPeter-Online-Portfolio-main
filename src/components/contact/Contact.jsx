@@ -16,6 +16,7 @@ function Contact() {
 
   const [formErrors, setFormErrors] = useState({});
   const [recaptchaValue, setRecaptchaValue] = useState(null); // Store reCAPTCHA value
+  const [emailSent, setEmailSent] = useState(false); // State for email submission alert
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -96,6 +97,7 @@ function Contact() {
         .then(
           (result) => {
             console.log(result.text);
+            setEmailSent(true);
           },
           (error) => {
             console.log(error.text);
@@ -113,6 +115,11 @@ function Contact() {
     <section className="contact" id="contact">
       <h1 className="ContactHeading">Do you have any projects?</h1>
       <span className="contactSubtitle">Let's chat</span>
+      {emailSent && ( // Display the email submission alert when emailSent is true
+        <div className="email-sent-alert">
+          Email sent successfully!
+        </div>
+      )}
       <form ref={form} onSubmit={handleSubmit}>
         <div className="mb-3">
           <input
@@ -191,10 +198,10 @@ function Contact() {
         </button>
       </form>
       <div className="social-media-links">
-        <a href="https://github.com/SimaPeter96">
+        <a href="https://github.com/SimaPeter96" target="_blank" rel="noopener noreferrer">
           <img src={GithubImg} alt="GitHub Logo" />
         </a>
-        <a href="https://www.linkedin.com/in/simamnkele-peter-b84a2118b/">
+        <a href="https://www.linkedin.com/in/simamnkele-peter-b84a2118b/" target="_blank" rel="noopener noreferrer">
           <img src={LinkedInImg} alt="LinkedIn Logo" />
         </a>
       </div>

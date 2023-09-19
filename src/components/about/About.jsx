@@ -17,8 +17,8 @@ function About() {
             </div>
           </Col>
           <Col md={6} sm={12} xs={12} className="align-self-center-about">
-            <div className="about-content-text">
-            <p className='paragraph'>Hello there! I'm a junior software developer. I build websites using front-end and back-end. I'm very creative. I'm good with graphics and design. I am very passionate and dedicated to my work. With the training experience, I've gained at my learnership, I have acquired the skills and knowledge necessary to make projects a success. Fun facts about me are, I love listening to music and dancing. And I enjoy going to the gym.</p>
+            <div className="about-content-text p">
+             <p>Hello there! I'm a junior software developer. I build websites using front-end and back-end. I'm very creative. I'm good with graphics and design. I am very passionate and dedicated to my work. With the training experience, I've gained at my learnership, I have acquired the skills and knowledge necessary to make projects a success. Fun facts about me are, I love listening to music and dancing. And I enjoy going to the gym.</p>
             <Button className='bounce-button' variant='custom-about' type='submit' href={CV} download='' target='_blank'>Hire Me</Button>
             </div>
           </Col>

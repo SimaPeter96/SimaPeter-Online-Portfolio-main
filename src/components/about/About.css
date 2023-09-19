@@ -102,6 +102,7 @@
   padding-left: 10px;
   padding-right: 50px;
   margin-right: 100px;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
 
 
 }
@@ -110,7 +111,8 @@
     font-size: 36px;
     text-align: center;
     padding-bottom: 46px;
-    margin-bottom: 0px;
+    margin-bottom: 40px;
+    margin-top: 0px;
     padding-left: 0px;
     height: 46px;
     width: 417px;
@@ -135,12 +137,13 @@
 
   }
 
-  .about-content-text{
+  .about-content-text p{
     width: 550px;
     height: 40px;
     padding-left: 80px;
     margin-right: 200px;
     text-align: center ;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
    
      
   }
