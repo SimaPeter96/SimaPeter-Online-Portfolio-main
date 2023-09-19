@@ -9,7 +9,7 @@ function Skills() {
       <Container className='skills-content-container'>
             <h1 className='skills-heading'>Skills</h1>
             <p>These are the skills I've gained during my learnership program and internship</p>
-            <video controls>
+            <video autoPlay loop muted>
             <source src={Vid} type="video/mp4" />
           </video>
       </Container>
