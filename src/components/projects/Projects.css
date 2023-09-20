@@ -65,6 +65,7 @@
   .Projectheading {
     font-size: 36px; /* Reduce font size for smaller screens */
     padding-bottom: 50px; /* Adjust spacing for smaller screens */
+    padding-top: 0px;
   }
 
   .projects p {
@@ -78,9 +79,13 @@
     padding-bottom: 5%; /* Adjust padding for smaller screens */
     
   }
+  .row {
+    gap: 20px;
+  }
 
   .Project-card {
     width: 75%; /* Set the width of the card to 100% for smaller screens */
+    gap: 20px;
   }
 
 }

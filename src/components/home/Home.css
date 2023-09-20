@@ -69,7 +69,9 @@
     border-color:  #C6DCF0;
   }
  
-
+  .img-fluid{
+    margin-top: 50px;
+  }
 
   .jpg {
     display: flex;
@@ -119,6 +121,13 @@
   .custom-home {
     width: 30%;
     font-size: 8rem;
+  }
+
+  .btn-custom-home {
+    margin-left: 0px;
+  }
+  .home-content a{
+    padding: 10px 7px;
   }
 
 }

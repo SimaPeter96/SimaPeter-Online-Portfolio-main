@@ -54,7 +54,7 @@ video {
     }
   
     .skills-content-container {
-      padding-top: 50%; /* Adjust top padding for smaller screens */
+      padding-top: 55%; /* Adjust top padding for smaller screens */
       min-width: auto; /* Remove min-width */
     }
   

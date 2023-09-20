@@ -7,20 +7,34 @@ import './Header.css';
 
 
 function Header() {
+
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleNavbar = () => {
+    setExpanded(!expanded);
+  };
+
+  const closeNavbar = () => {
+    setExpanded(false);
+  };
+  
+
+
+
   return (
-    <Navbar expand="lg" className="NavContainer">
+    <Navbar expand="lg" className="NavContainer" expanded={expanded} >
     <Container>
       <Navbar.Brand href="home">
         <img src={logo} className="logo"/>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar}/>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto">
-          <Nav.Link href="#home" >Home</Nav.Link>
-          <Nav.Link href="#about" >About</Nav.Link>
-          <Nav.Link href="#skills" >Skills</Nav.Link>
-          <Nav.Link href="#projects" >Projects</Nav.Link>
-          <Nav.Link href="#contact" >Contact</Nav.Link>
+          <Nav.Link href="#home" onClick={closeNavbar}>Home</Nav.Link>
+          <Nav.Link href="#about" onClick={closeNavbar}>About</Nav.Link>
+          <Nav.Link href="#skills" onClick={closeNavbar}>Skills</Nav.Link>
+          <Nav.Link href="#projects" onClick={closeNavbar} >Projects</Nav.Link>
+          <Nav.Link href="#contact" onClick={closeNavbar}>Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Container>

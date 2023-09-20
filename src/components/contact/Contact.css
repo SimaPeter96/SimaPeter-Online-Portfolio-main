@@ -6,7 +6,7 @@
   }
   
   .contact {
-    height: 110vh;
+    height: 123vh;
     background-image: url('../Img/Contact.jpg');
     background-size: cover;
     display: flex;
@@ -41,7 +41,7 @@
   }
 
   .mb-3{
-    margin-bottom: 0.0%!important;
+    margin-bottom: 3%!important;
   
   
   }
@@ -100,12 +100,15 @@
   }  
 
 
- 
+  .recaptcha-container {
+    margin-left: 50px;
+  }
+
 
   .footer-copyright {
     font-size: 12px;
     color: #666;
-    padding-bottom: 20%;
+    padding-bottom: 0px;
     
   }
   
@@ -115,6 +118,7 @@
   @media (max-width: 768px) {
     .ContactHeading {
       font-size: 32px;
+      margin-top: 0px;
     }
   
     .contactSubtitle {
@@ -126,9 +130,20 @@
       margin-bottom: 8px;
      
     }
+    .mb-3{
+    margin-bottom: 3%!important;
+    }
+
+    .recaptcha-container {
+      margin-left: 30px;
+    }
 
     .Send-Button{
       margin-right: 117px;
     }
-  }
-  
+
+    .footer-copyright {
+      padding: 0px;
+    }
+
+}

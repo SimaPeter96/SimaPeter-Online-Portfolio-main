@@ -183,11 +183,12 @@ function Contact() {
           ></textarea>
         </div>
         <div className="mb-3">
-          
+          <div className='recaptcha-container'>
           <ReCAPTCHA
             sitekey="6LfphRgoAAAAANe2zy84XxvjG2p9Zz9K2All9hQ_" // Replace with the correct reCAPTCHA key
             onChange={handleRecaptchaChange}
           />
+          </div>
           {formErrors.recaptcha && (
             <div className="error">{formErrors.recaptcha}</div>
           )}
@@ -206,11 +207,9 @@ function Contact() {
         </a>
       </div>
       <hr />
-      <div className="footer-below">
         <div className="footer-copyright">
           <p>&copy;{new Date().getFullYear()} SimaPeter. All rights reserved</p>
         </div>
-      </div>
     </section>
   );
 }
