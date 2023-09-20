@@ -34,3 +34,8 @@
     color: black;
     font-weight: 48px;
 }
+
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 21px;
+}

@@ -14,7 +14,7 @@ function Projects() {
         <Row>
           <Col md={4}>
             <Card className="Project-card">
-              <a href="https://melodic-nasturtium-8a6e3c.netlify.app/">
+              <a href="https://melodic-nasturtium-8a6e3c.netlify.app/"  target="_blank" rel="noopener noreferrer">
                 <Card.Img src={projectImage1} alt="Project 1" />
                 <div className="overlay">
                   <div className="text">Mzamomtsha Primary School Website</div>
@@ -25,7 +25,7 @@ function Projects() {
           </Col>
           <Col md={4}>
             <Card className="Project-card">
-              <a href="https://github.com/SimaPeter96/Basic-Bank-Application-Program">
+              <a href="https://github.com/SimaPeter96/Basic-Bank-Application-Program"  target="_blank" rel="noopener noreferrer">
                 <Card.Img src={projectImage2} alt="Project 2" />
                 <div className="overlay">
                   <div className="text">Basic Bank Application Program</div>
@@ -35,7 +35,7 @@ function Projects() {
           </Col>
           <Col md={4}>
             <Card className="Project-card">
-              <a href="https://github.com/SimaPeter96/Financial_Calculator">
+              <a href="https://github.com/SimaPeter96/Financial_Calculator"  target="_blank" rel="noopener noreferrer">
                 <Card.Img src={projectImage3} alt="Project 3" />
                 <div className="overlay">
                   <div className="text">Financial Calculator</div>
