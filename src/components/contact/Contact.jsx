@@ -3,6 +3,7 @@ import ReCAPTCHA from 'react-google-recaptcha'; // Import reCAPTCHA
 import GithubImg from '../Img/GitHub.png';
 import LinkedInImg from '../Img/LinkedIn.png';
 import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 import './Contact.css';
 
 function Contact() {
@@ -98,6 +99,13 @@ function Contact() {
           (result) => {
             console.log(result.text);
             setEmailSent(true);
+
+            Swal.fire({
+              icon: 'success',
+              title: 'Email Sent',
+              text: 'Your email has been sent successfully!',
+            });
+
           },
           (error) => {
             console.log(error.text);
@@ -115,11 +123,6 @@ function Contact() {
     <section className="contact" id="contact">
       <h1 className="ContactHeading">Do you have any projects?</h1>
       <span className="contactSubtitle">Let's chat</span>
-      {emailSent && ( // Display the email submission alert when emailSent is true
-        <div className="email-sent-alert">
-          Email sent successfully!
-        </div>
-      )}
       <form ref={form} onSubmit={handleSubmit}>
         <div className="mb-3">
           <input

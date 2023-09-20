@@ -20,7 +20,8 @@
     "react-dom": "^18.2.0",
     "react-google-recaptcha": "^3.1.0",
     "react-router-dom": "^6.15.0",
-    "react-scroll": "^1.8.9"
+    "react-scroll": "^1.8.9",
+    "sweetalert2": "^11.7.28"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

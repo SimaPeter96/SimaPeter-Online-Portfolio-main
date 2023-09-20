@@ -18,11 +18,11 @@
   .ContactHeading {
     font-family: 'Share Tech Mono', monospace;
     font-size: 40px;
-    margin-top: 150px;
     font-weight: normal;
     text-align: center;
     position: relative;
     margin-bottom: 10px;
+    padding-top: 150px;
   }
   
   .contactSubtitle {
