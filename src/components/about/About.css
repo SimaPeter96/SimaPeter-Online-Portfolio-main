@@ -5,6 +5,8 @@
     font-family: 'Carrois Gothic', sans-serif;
 }
 
+/* about section page*/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+
 .about{
     height: 100vh;
     background-image: url('../Img/aboutBG.jpg');
@@ -12,12 +14,15 @@
     width: 100%;
     padding: 80px 0;
 }
+
+/* Image*/
 .abt-img{
   max-width: 100%;
   height: auto;
   border-radius: 50%;
-  
+
 }
+
 .about-Img{
   padding-left: 150px;
   padding-bottom: 80%;
@@ -83,7 +88,7 @@
   border-color:  #C6DCF0;
 }
 
-
+/* animated effect for the button*/
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -96,7 +101,7 @@
   }
 }
 
-  
+  /*smaller screen iPhone */
 @media  (max-width:768px) {
   .about{
     padding: 0;

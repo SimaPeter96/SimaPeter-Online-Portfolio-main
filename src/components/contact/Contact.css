@@ -40,6 +40,7 @@
   
   }
 
+  /* input place holder*/
   .mb-3{
     margin-bottom: 3%!important;
   
@@ -114,7 +115,7 @@
   
   
   
-  /* Media Query for responsiveness */
+  /* Media Query for responsiveness smaller screens*/
   @media (max-width: 768px) {
     .ContactHeading {
       font-size: 32px;

@@ -1,5 +1,5 @@
 
-
+ /* Home section page */
 .home {
     display: flex;
     height: 100vh;
@@ -8,6 +8,7 @@
 
   }
 
+  /* Home section content size*/
   .home-content {
     display: flex;
     flex-direction: column;
@@ -36,12 +37,14 @@
 
 }
 
+  /* software developer in the paragraph*/
 .home-content p span {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     color: #08468E;
     font-weight: bold;
 }
   
+  /* Paragraph*/
   .home-content p {
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-size: 22px;
@@ -53,7 +56,7 @@
   }
   
 
-
+    /* button*/
   .btn-custom-home {
     background-color: #356093;
     border-color: #C6DCF0;
@@ -69,10 +72,12 @@
     border-color:  #C6DCF0;
   }
  
+    /* image container*/
   .img-fluid{
     margin-top: 50px;
   }
 
+    /* Image*/
   .jpg {
     display: flex;
     justify-content: flex-end;
